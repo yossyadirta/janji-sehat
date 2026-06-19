@@ -113,10 +113,10 @@ const PatientForm: React.FC<PatientFormProps> = ({ setIsUserData }) => {
             />
             <CustomFormField
               control={form.control}
-              fieldType={FormFieldType.INPUT}
+              fieldType={FormFieldType.PHONE_INPUT}
               name="phone"
               label="Nomor Telepon"
-              placeholder="(555) 123-4567"
+              placeholder="81234567"
             />
           </>
         )}
