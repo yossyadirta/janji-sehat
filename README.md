@@ -1,142 +1,117 @@
 <div align="center">
-  <img src="public/assets/icons/logo-full.svg" alt="Logo" width="200">
+  <img src="public/assets/icons/logo-full.svg" alt="Janji Sehat Logo" width="200">
+    
+  **A modern web-based platform that simplifies appointment scheduling between patients and healthcare providers, ensuring a seamless experience for all.**
+  
+  [![Next.js](https://img.shields.io/badge/Next.js-15-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
+  [![TypeScript](https://img.shields.io/badge/TypeScript-5-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+  [![TailwindCSS](https://img.shields.io/badge/Tailwind%20CSS-v4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+  [![Appwrite](https://img.shields.io/badge/Appwrite-F02E65?style=for-the-badge&logo=appwrite&logoColor=white)](https://appwrite.io/)
+  [![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-000000?style=for-the-badge&logo=shadcnui&logoColor=white)](https://ui.shadcn.com/)
 </div>
 
-
 <br />
+
 <div align="center">
-  <a href="https://makans.web.app/">
-    <img src="public/assets/images/homepage.png" alt="Logo" width="700" height="450">
+  <a href="https://janji-sehat.vercel.app">
+    <img src="public/assets/images/homepage.png" alt="Janji Sehat App Preview" width="750" style="border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); margin-bottom: 24px;">
   </a>
 </div>
 
-## About
-Janji Sehat is a web-based application designed to simplify the appointment scheduling process between patients and doctors. This platform enables users to easily create accounts, maintain personal health records, and schedule appointments with their preferred doctors. Additionally, administrators have the capability to manage, approve, or cancel appointments, ensuring a seamless experience for both patients and healthcare providers.
+---
 
-The primary goal of Janji Sehat is to modernize healthcare services, streamline appointment management, and improve communication between patients and medical staff.
+## ⚡ Main Philosophy: Modernizing Healthcare Access
+Janji Sehat is intentionally architected to streamline and modernize healthcare services. It bridges the communication gap between patients and medical staff by providing a unified, easy-to-use digital interface.
 
-## Built With
-* ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-* ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-* ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-* ![Appwrite](https://img.shields.io/badge/Appwrite-F02E65?style=for-the-badge&logo=appwrite&logoColor=white)
-* ![SendGrid](https://img.shields.io/badge/SendGrid-0AABE4?style=for-the-badge&logo=sendgrid&logoColor=white)
-* ![ShadCN](https://img.shields.io/badge/ShadCN-5B21B6?style=for-the-badge&logo=react&logoColor=white)
-* ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-
-### Features
-- **User Account Creation**: Patients can create accounts and log in using a secure passcode sent via email.
-- **Health Records**: Users can maintain their health records within their profiles.
-- **Appointment Scheduling**: Easily book appointments with preferred doctors based on availability.
-- **Admin Access**: Admins can approve or cancel appointments as needed.
-- **Secure Login**: Login is enabled via a passcode sent to the user's registered email.
-
-## Live Demo
-https://janji-sehat.vercel.app
-
-## User Guide
-
-### Admin Guide
-
-As an Admin, you have the ability to manage user appointments and access certain system features. Here’s how to use the admin features:
-
-1. **Login as Admin**
-   - **Navigate to the Homepage**: Go to the homepage of the application.
-   - **Click on the 'Admin' Button**: On the homepage, click the **'Admin'** button to go to the admin login page.
-   - **Enter the Admin Passcode**: Enter the passcode **`123321`** to access the admin panel.
-   
-2. **Admin Dashboard**
-   - Once logged in, you will be redirected to the **Admin Dashboard** where you can:
-     - **View Appointments**: See a list of all appointments made by users.
-     - **Approve/Reject Appointments**: You can choose to accept or cancel appointments.
-
-3. **Appointment Management**
-   - **Approve/Reject Appointments**: As an admin, you will have the ability to approve or reject user appointments.
-     - **Approve**: Click on an appointment to confirm it.
-     - **Reject**: If necessary, click on the "Reject" button to cancel an appointment.
-   - **Notification**: Users will receive an email notification about the status of their appointment (approved or canceled).
+- **Seamless Scheduling**: Easily book appointments with preferred doctors based on real-time availability.
+- **Centralized Health Records**: Users can securely maintain their personal health records and history directly within their profiles.
+- **Admin Control**: Robust administrative capabilities to effortlessly manage, approve, or cancel patient appointments.
 
 ---
 
-### User Guide
+## 🖥️ Application Structure
+Janji Sehat is designed with specific workflows to cater to both patients and healthcare administrators.
 
-As a User (patient), you can register an account, schedule appointments with doctors, and receive notifications about your appointment status. Here's how to use the system:
+1. **Patient Portal**
+   The core interface for patients to manage their health journey.
+   - **Authentication**: Secure login via an OTP passcode sent directly to the user's registered email.
+   - **Profile Management**: A dedicated space to detail health history and medical notes.
+   - **Appointment Booking**: An intuitive scheduling interface to request new appointments.
 
-#### 1. **Create an Account**
-   - **Sign Up**: Go to the sign-up page.
-   - **Provide Your Details**: Enter your full name, email address, phone number, and password to create your account.
-   - **Submit**: Click the **Submit** button to create your account.
+2. **Admin Dashboard**
+   The centralized command center for administrators (accessible via passkey).
+   - **Appointment Management**: View the complete list of requested appointments.
+   - **Action Center**: Instantly approve or reject appointment requests, triggering automated email notifications to the respective patients.
 
-   After completing the sign-up process, you will be redirected to the profile page where you can add health details.
+---
 
-#### 2. **Create Your Profile**
-   - **Complete Your Health History**: After creating your account, navigate to the **Create Profile** page.
-   - **Provide Health Information**: Fill in your health history and any relevant medical notes that might help the doctor understand your health background.
-   - **Save Profile**: Once your profile is complete, click **Save** to submit your profile information.
+## ✨ Features
+The application is built with modern web technologies focusing on security, speed, and usability.
 
-   After completing the profile, you will be redirected to the appointment page to make new appointment.
+- **🪪 Secure Passcode Login**: Passwordless authentication system utilizing email-delivered OTPs for patients, and a secure passkey (`123321`) for admins.
+- **📅 Dynamic Scheduling**: An intuitive interface for patients to select dates, times, and preferred doctors.
+- **🔔 Automated Notifications**: Email alerts to keep patients informed whenever their appointment status changes (e.g., approved or cancelled).
+- **🌗 Premium Aesthetics**: A beautifully crafted UI using `shadcn/ui` and Tailwind CSS, providing a clean, accessible, and premium user experience.
 
-#### 3. **Schedule an Appointment**
-   - **Choose a Doctor**: Once your profile is approved, go to the appointment page.
-   - **Select a Date and Time**: Pick the doctor you wish to see, and choose a suitable time slot for your appointment.
-   - **Submit**: Confirm your appointment by clicking the **Submit** button.
+---
 
-#### 4. **Receive Appointment Notifications**
-   - **Email Confirmation**: After scheduling an appointment, you will receive an email confirming the appointment if it is approved by the admin.
-   - **Appointment Cancellation**: If the admin rejects your appointment, you will receive an email informing you of the cancellation.
+## 🛠️ Built With
 
-## Installation
-To set up this project locally, follow these steps:
+| Tech Stack | Purpose |
+| :--- | :--- |
+| **Next.js** | Core React framework providing App Router and server actions. |
+| **TypeScript** | Static typing for complete type safety and robust code architecture. |
+| **Tailwind CSS** | Utility-first CSS framework for rapid and consistent UI styling. |
+| **Appwrite** | Backend-as-a-Service powering database, authentication, and storage. |
+| **shadcn/ui** | Accessible, beautifully designed React components. |
+| **SendGrid / Nodemailer** | Email delivery services for OTPs and appointment notifications. |
 
-1. **Clone the Repository**  
-   ```bash
-   git clone https://github.com/yossyadirta/janji-sehat.git
-   cd janji-sehat
+---
 
-2. **Install Dependencies**  
-   To install the required dependencies, run one of the following commands in your terminal:
+## 🚀 Getting Started
 
-   - With npm:
-     ```bash
-     npm install
-     ```
+### Prerequisites
+Make sure you have **Node.js** and **npm** installed on your system.
 
-   - Or with yarn:
-     ```bash
-     yarn install
-     ```
-     
-2. **Set Environtment Variables**  
-Create a .env.local file and include the following:
+### 1. Clone the Repository
+```bash
+git clone https://github.com/yossyadirta/janji-sehat.git
+cd janji-sehat
+```
 
-    ```bash
-    NEXT_PUBLIC_API_URL=your_api_url
-    NEXT_PUBLIC_SENDGRID_API_KEY=your_sendgrid_api_key
-    NEXT_PUBLIC_APPWRITE_PROJECT_ID=your_appwrite_project_id
-    NEXT_PUBLIC_APPWRITE_ENDPOINT=your_appwrite_endpoint
-    NEXT_PUBLIC_ADMIN_PASSCODE=123321
-    
-    NEXT_PUBLIC_PROJECT_ID=your_public_project_id
-    NEXT_PUBLIC_API_KEY=your_api_url
-    DATABASE_ID=your_database_id
-    PATIENT_COLLECTION_ID=your_patient_collection_id
-    DOCTOR_COLLECTION_ID=your_doctor_collection_id
-    APPOINTMENT_COLLECTION_ID=your_appointment_collection_id
-    AUTH_SESSION_COLLECTION_ID=your_auth_session_id
-    NEXT_PUBLIC_BUCKET_ID=your_bucket_id
-    NEXT_PUBLIC_ENDPOINT=your_appweire_endpoint
-    NEXT_PUBLIC_ADMIN_PASSKEY=your-admin_passkey
-    ```
+### 2. Install Dependencies
+```bash
+npm install
+# or
+yarn install
+```
 
-4. **Start the Development Server**  
-    - With npm:
-    ```bash
-    npm run dev
-    ```
-  
-    - Or with yarn:
-    ```bash
-    yarn dev
-    ```
+### 3. Set Environment Variables
+Create a `.env.local` file in the root directory and configure it based on your Appwrite and Email provider setup:
 
-The application will be available at http://localhost:3000
+```env
+NEXT_PUBLIC_API_URL=your_api_url
+NEXT_PUBLIC_SENDGRID_API_KEY=your_sendgrid_api_key
+NEXT_PUBLIC_APPWRITE_PROJECT_ID=your_appwrite_project_id
+NEXT_PUBLIC_APPWRITE_ENDPOINT=your_appwrite_endpoint
+NEXT_PUBLIC_ADMIN_PASSCODE=123321
+
+NEXT_PUBLIC_PROJECT_ID=your_public_project_id
+NEXT_PUBLIC_API_KEY=your_api_key
+DATABASE_ID=your_database_id
+PATIENT_COLLECTION_ID=your_patient_collection_id
+DOCTOR_COLLECTION_ID=your_doctor_collection_id
+APPOINTMENT_COLLECTION_ID=your_appointment_collection_id
+AUTH_SESSION_COLLECTION_ID=your_auth_session_id
+NEXT_PUBLIC_BUCKET_ID=your_bucket_id
+NEXT_PUBLIC_ENDPOINT=your_appwrite_endpoint
+NEXT_PUBLIC_ADMIN_PASSKEY=your_admin_passkey
+```
+
+### 4. Run the Development Server
+```bash
+npm run dev
+# or
+yarn dev
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
